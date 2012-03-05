@@ -1,5 +1,0 @@
-/home/krinkle/bots/Cluekie/CTFBot/bin/Debug/Console.msgs
-/home/krinkle/bots/Cluekie/CTFBot/bin/Debug/CTFBot.exe.mdb
-/home/krinkle/bots/Cluekie/CTFBot/bin/Debug/CTFBot.exe
-/home/krinkle/bots/Cluekie/CTFBot/obj/Debug/CTFBot.exe
-/home/krinkle/bots/Cluekie/CTFBot/obj/Debug/CTFBot.exe.mdb
