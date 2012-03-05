@@ -1,0 +1,22 @@
+# Messages used by the bot, note all messages should be 5 digit number with leading zeroes
+#
+# ${var} = variables to be substituted
+# %cnn[,nn] = mIRC colour nn,nn
+# %b = Toggle bolding
+#
+# 0 = Reporting / 1 = Program / 2 = Interface
+00000=0.02
+
+# Reporting
+00100=You need to be voiced to do that
+00102=You need to be an op to do that
+
+# Program
+10100=${line}
+10101=Error: ${line}
+
+# Interface messages
+20001=rcbot bl add ${user} x=${listduration} r=${listreason}
+20002=%c04%b!! Possible ignored vandalism%b%c14 by %c07%b${user}%b%c14 on %b${title}%b %c14"${reason}"
+20003=%c04%b!!%b %c12${diff}%c14 | %c12${history}%c14 | %c12${contribs}
+20005=Please see http://meta.wikimedia.org/wiki/User:Krinkle/Bots/CluenetToFreenode for a description of commands.

@@ -1,0 +1,4 @@
+/home/krinkle/bots/Cluekie/CTFBot/bin/Release/CTFBot.exe.mdb
+/home/krinkle/bots/Cluekie/CTFBot/bin/Release/CTFBot.exe
+/home/krinkle/bots/Cluekie/CTFBot/obj/Release/CTFBot.exe
+/home/krinkle/bots/Cluekie/CTFBot/obj/Release/CTFBot.exe.mdb
