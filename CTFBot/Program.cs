@@ -23,7 +23,7 @@ namespace CTFBot
 
 	class Program
 	{
-		const string version = "1.0.6";
+		const string version = "1.0.7";
 
 		public static IrcClient irc = new IrcClient();
 		public static SourceReader sourceirc = new SourceReader();
@@ -467,8 +467,6 @@ namespace CTFBot
 				 {
 					 extraParams = "";
 				 }
-	
-				 string[] cmdParams = extraParams.Split(new char[1] { ' ' });
 	
 				 switch (command)
 				 {
