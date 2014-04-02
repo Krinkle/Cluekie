@@ -23,7 +23,7 @@ namespace CTFBot
 
 	class Program
 	{
-		const string version = "1.0.9";
+		const string version = "1.0.10";
 
 		public static IrcClient irc = new IrcClient();
 		public static SourceReader sourceirc = new SourceReader();
