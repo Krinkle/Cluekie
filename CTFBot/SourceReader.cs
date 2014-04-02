@@ -68,7 +68,7 @@ namespace CTFBot
 			}
 			catch (ConnectionException e)
 			{
-				lastError = "Connection error: " + e.Message;
+				logger.Fatal("Could not connect: " + e.Message);
 				return;
 			}
 			try
