@@ -17,9 +17,9 @@ namespace CTFBot
 
 		public string fullstring;
 		public string sendname;
-		
+
 		public EventType eventtype;
-		
+
 		public string title;
 		public string user;
 		public string url;
@@ -132,7 +132,7 @@ namespace CTFBot
 
 			/* Sample input
 			:ClueBot_NG!~ClueBot_N@192.168.2.146 PRIVMSG #wikipedia-VAN :15[[07Title15]] by "0380.100.196.12815" (12 http://en.wikipedia.org/w/index.php?diff=403417897&oldid=396729660 15) 060.90746715 (04Reverted15) (13Default revert15) (021.234 15s)
-			
+
 			:ClueBot_NG!~ClueBot_N@192.168.2.146 PRIVMSG #wikipedia-VAN :15[[07Page15]] by "03127.0.0.115" (12 http://en.wikipedia.org/w/index.php?diff=403418859&oldid=403418512 15) 060.95910315 (03Not Reverted15) (13Reverted before15) (020.3157 15s)
 			*/
 
@@ -149,8 +149,8 @@ namespace CTFBot
 				3:]] by "
 				4:173.57.160.195
 				5:" (
-				6: http://en.wikipedia.org/w/index.php?diff=403448965&oldid=402566006 
-				7:) 
+				6: http://en.wikipedia.org/w/index.php?diff=403448965&oldid=402566006
+				7:)
 				8:0.935177
 				9: (
 				10:Reverted
@@ -165,8 +165,8 @@ namespace CTFBot
 				3:]] by "
 				4:68.194.43.126
 				5:" (
-				6: http://en.wikipedia.org/w/index.php?diff=403448989&oldid=403448396 
-				7:) 
+				6: http://en.wikipedia.org/w/index.php?diff=403448989&oldid=403448396
+				7:)
 				8:0.963363
 				9: (
 				10:Not Reverted
@@ -175,7 +175,7 @@ namespace CTFBot
 				13:) (
 				14:3.0718929767609 15s)
 				*/
-				
+
 				// Cut off possible special character at the end
 				if (fields[14].EndsWith("\x03"))
 					fields[14] = fields[14].Substring(0, fields[14].Length - 1);
@@ -198,7 +198,7 @@ namespace CTFBot
 
 				rce.fullstring = e.Data.Message;
 				rce.sendname = e.Data.Nick;
-		
+
 				rce.title = "";
 				rce.user = "";
 				rce.url = "";
@@ -212,7 +212,7 @@ namespace CTFBot
 					if (e.Data.Nick == Program.sourceAccount)
 					{
 						rce.eventtype = SourceEvent.EventType.cluereport;
-		
+
 						rce.title = fields[2];
 						rce.user = fields[4];
 						rce.url = fields[6].Trim();

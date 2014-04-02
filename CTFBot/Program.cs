@@ -455,9 +455,9 @@ namespace CTFBot
 				 // Have to be voiced to issue commands at all
 				 if (!hasPrivileges('+', ref e))
 					 return;
-	
+
 				 string command = cmdMatch.Groups["command"].Captures[0].Value;
-	
+
 				 switch (command)
 				 {
 					 case "quit":
